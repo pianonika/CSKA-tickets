@@ -1,0 +1,53 @@
+@import '../../less/variables.less';
+
+.popup {
+  width: 504px;
+  background-color: @fontColor3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin: 0 auto;
+  position: relative;
+
+  &__body {
+    padding: 17px 67px 0 67px;
+  }
+
+  &__title {
+    font: normal 60px/70px @fontBrand;
+    text-transform: uppercase;
+    color: @fontColor1;
+    text-align: center;
+  }
+
+  &__footer-links {
+    background-color: fade(@borderColor7,10%);
+    padding: 0 67px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__footer-link {
+    padding: 23px 0;
+    color: #aeb6cc;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: normal 12px/22px @fontBold;
+    text-align: center;
+    width: 46.5%;
+    display: block;
+
+    &:nth-child(2n+1) {
+      padding-right: 7%;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+
+
+.popups {
+  display: none;
+}

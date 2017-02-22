@@ -1,0 +1,45 @@
+@import '../../less/variables.less';
+
+.side-menu{
+  font: normal 12px/18px @fontBlack;
+  text-transform: uppercase;
+
+  &__header {
+    color: @brandColorRed;
+    font-family: inherit;
+    padding-bottom: 11px;
+    margin-bottom: 25px;
+    margin-top: 18px;
+    font-family: inherit;;
+
+    &::after {
+      content: '';
+      width: 107px;
+      height: 1px;
+      background-color: @gray-light;
+      position: relative;
+      display: block;
+      bottom: -11px;
+    }
+  }
+
+  &__item{
+    color: #000;
+    margin-bottom: 17px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--logout {
+      color: @fontColor10;
+    }
+
+    &--bright {
+      color: @brandColorRed;
+    }
+  }
+}

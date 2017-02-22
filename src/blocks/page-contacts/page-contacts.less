@@ -1,0 +1,43 @@
+@import '../../less/variables.less';
+
+.page-contacts {
+  display: flex;
+  margin-left:  100px;
+  padding-top: 58px;
+
+  &__item{
+    border-top: 1px solid @gray-light;
+    padding-top: 58px;
+    width: 300px;
+  }
+
+  &__header {
+    font: normal 22px/24px @fontBrand;
+    color: @fontColor1;
+    margin: 0 0 10px;
+  }
+
+  &__phone {
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+    text-decoration:  none;
+    color:  @fontColor1;
+    font-family: @fontReg;
+    margin: 20px 0 10px;
+  }
+
+  &__email {
+    display: block;
+    color: @brandColorRed;
+    font-family: @fontReg;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px 0;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+  }
+
+}

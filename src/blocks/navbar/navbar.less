@@ -1,0 +1,19 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/navbar/navbar.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+.top-menu{
+  display: flex;
+  align-items: center;
+  height: 104px;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 1px;
+    margin: 0 5%;
+    height: 57px;
+  }
+  &:before {border-left: 1px solid @gray-lightest;}
+  &:after {border-right: 1px solid @gray-lightest;}
+}

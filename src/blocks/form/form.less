@@ -1,0 +1,35 @@
+@import '../../less/variables.less';
+
+.form {
+  margin: 3px 0 0 0;
+  padding-bottom: 39px;
+
+  &__field {
+    margin-bottom: 17px;
+    display: flex;
+
+    &--checkbox {
+      display: inline-block;
+      position: relative;
+    }
+  }
+
+  &__inp-text {
+    width: 100%;
+    padding: 0 14px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    font: normal 17px/43px 'helveticaneuecyrroman', Helvetica;
+    color: @fontColor1;
+  }
+
+
+  &__row {
+
+    &--v-centred {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

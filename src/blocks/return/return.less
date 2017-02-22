@@ -1,0 +1,35 @@
+@import '../../less/variables.less';
+
+.return {
+  height: 45px;
+  border: 1px solid  fade(@additional-info, 20%);
+  color: fade(@additional-info, 50%);
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover{
+    color: fade(@additional-info, 70%);
+    border-color:  fade(@additional-info, 40%);
+  }
+
+  &:hover  &__ico {
+      border-color:  fade(@additional-info, 40%);
+  }
+
+  &__ico{
+    width: 39px;
+    border-right: 1px solid  fade(@additional-info, 20%);
+    transition: all .2s;
+  }
+
+  &__text{
+    width: 107px;
+    padding: 0 15px;
+  }
+}

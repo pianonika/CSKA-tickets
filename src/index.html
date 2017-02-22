@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('_include/page_head.html')
+</head>
+<body class="page">
+  	@@include('blocks/sprite-svg--localstorage/img/sprite-svg--ls.svg')
+
+    @@include('blocks/page-header/page-header.html')
+
+
+    <div class="page__content container-fluid wrapper">
+         <div class="page__header page__wrapper">
+           <div class="return__wrapper  col-xs-2">
+             <a class="return"><span class="return__ico"><img src="/img/return-arrow.png" alt="return-arrow.png"></span> <span class="return__text">к списку игр</span></a>
+           </div>
+           <div class="page__title col-xs-10">
+             <h1>личные данные</h1>
+           </div>
+         </div>
+         <div class="page__wrapper">
+           <div class="page__left col-xs-2">
+              <div class="side-menu">
+                <div class="side-menu__header">константин константинопольский</div>
+                <div class="side-menu__list">
+                  <a class="side-menu__item">ваши платежи</a>
+                  <a class="side-menu__item">личные данные</a>
+                  <a class="side-menu__item side-menu__item--logout">выйти</a>
+                </div>
+              </div>
+           </div>
+           <div class="page__content-area col-xs-10">
+              <ul>
+                <li><a href="/buy_ticket_payments.html">Платежи</a></li>
+                <li><a href="/ticket-list.html">Выбор матча</a></li>
+                <li><a href="/inner.html">Внутренняя</a></li>
+                <li><a href="/buy_ticket_sektor.html">Выбор места</a></li>
+                <li><a href="/inner.html">Внутренняя</a></li>
+                <li><a href="/buy_ticket.html">Купить билет</a></li>
+              </ul>
+              @@include('_include/contacts_on_page.html')
+           </div>
+
+         </div>
+    </div>
+
+
+    @@include('blocks/page-footer/page-footer.html')
+    @@include('_include/page_bottom.html')
+</body>
+</html>

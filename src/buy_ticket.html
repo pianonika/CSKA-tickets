@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('_include/page_head.html')
+</head>
+<body class="page">
+  	@@include('blocks/sprite-svg--localstorage/img/sprite-svg--ls.svg')
+
+    @@include('blocks/page-header/page-header.html')
+
+
+    <div class="page__content container-fluid wrapper">
+         <div class="page__header page__wrapper">
+           <div class="return__wrapper  col-xs-2">
+             <a class="return"><span class="return__ico"><img src="/img/return-arrow.png" alt="return-arrow.png"></span> <span class="return__text">к списку игр</span></a>
+           </div>
+           <div class="page__title col-xs-10">
+             <h1>ЦСКА - Локомотив</h1>
+             <div class="page__subtitle">26 декабря 19:30</div>
+           </div>
+         </div>
+         <div class="page__wrapper">
+           <div class="page__left col-xs-2">
+              <div class="side-menu">
+                <div class="side-menu__list">
+                  <a class="side-menu__item side-menu__item--bright login">вход</a>
+                  <a class="side-menu__item registration">регистрация</a>
+                </div>
+              </div>
+           </div>
+           <div class="page__content-area col-xs-10">
+
+              <div class="arena__wrapper">
+                <img src="/img/arena.png" alt="arena.png" style="margin-bottom: 60px; width:1054px; max-width: none;">
+              </div>
+              @@include('_include/contacts_on_page.html')
+           </div>
+
+         </div>
+    </div>
+
+
+    @@include('blocks/page-footer/page-footer.html')
+    @@include('_include/page_bottom.html')
+    @@include('_include/popups.html')
+</body>
+</html>
