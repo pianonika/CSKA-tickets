@@ -1,4 +1,4 @@
-$(window).load( function () {
+$(function () {
 
         $('audio,video:not(.video-bg__video), iframe.page-video').mediaelementplayer();
 });

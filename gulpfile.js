@@ -424,10 +424,10 @@ function getComponentsFiles() {
    сomponentsFilesList.js.unshift(dirs.source + '/js/jquery.validate.js'); // добавляем в конец
  }
 
-// Если хочется иметь в конкатенируемом JS ещё какие-то файлы, пишите это здесь
-if(fileExistAndHasContent(dirs.source + '/js/jquery.validate.js')) {
-  сomponentsFilesList.js.unshift(dirs.source + '/js/jquery.validate.js'); // добавляем в конец
-}
+  // Если хочется иметь в конкатенируемом JS ещё какие-то файлы, пишите это здесь
+  if(fileExistAndHasContent(dirs.source + '/js/jquery.validate.js')) {
+    сomponentsFilesList.js.unshift(dirs.source + '/js/jquery.validate.js'); // добавляем в конец
+  }
 
  // Если хочется иметь jQuery в конкатенируемом JS, раскомментируйте эти строки
  if(fileExistAndHasContent(dirs.source + '/js/mediaelement-and-player.js')) {
