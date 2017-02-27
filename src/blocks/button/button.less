@@ -2,14 +2,27 @@
 
 .button {
   padding: 0 19px;
-  font: normal 18px/53px @fontBrand;
+  font: normal 18px/45px @fontBrand;
   border: none;
   outline: none;
   background-color:  @brandColorRed;
   color: #fff;
   cursor: pointer;
 
+  &--big{
+    font: normal 25px/50px @fontBrand;
+  }
+
+
   &:hover {
     background-color:  darken(@brandColorRed,10%);
+  }
+}
+
+.button-container {
+  margin: 20px 0;
+
+  & .button {
+      margin: 0 6px;
   }
 }

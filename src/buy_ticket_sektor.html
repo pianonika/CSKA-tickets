@@ -22,21 +22,31 @@
          <div class="page__wrapper">
            <div class="page__left col-xs-2">
               <div class="side-menu">
-                <div class="side-menu__header">константин константинопольский</div>
                 <div class="side-menu__list">
-                  <a class="side-menu__item">ваши платежи</a>
-                  <a class="side-menu__item">личные данные</a>
-                  <a class="side-menu__item side-menu__item--logout">выйти</a>
+                  <a class="side-menu__item side-menu__item--bright login">вход</a>
+                  <a class="side-menu__item registration">регистрация</a>
                 </div>
               </div>
            </div>
            <div class="page__content-area col-xs-10">
-              <ul>
-                <li><a href="/buy_ticket_payments.html">Платежи</a></li>
-                <li><a href="/ticket-list.html">Выбор матча</a></li>
-                <li><a href="/inner.html">Внутренняя</a></li>
-                <li><a href="/buy_ticket_sektor.html">Выбор места</a></li>
-              </ul>
+
+              <div class="arena__wrapper">
+                <div class="arena__widget">
+                  <img src="/img/choose_place.png" alt="arena.png">
+                </div>
+                <div class="arena__info arena__info--center ">
+                  <a href="/inner.html" class="icon-text icon-text--info">Как купить?</a>
+                  <div class="arena__legend  arena__legend--center">
+                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #a38be0"></span> Есть места</div>
+                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #bdc9d7"></span> Места нет</div>
+                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #fbee33"></span> Выбранные</div>
+                  </div>
+                </div>
+                <div class="button-container">
+                  <button type="submit" class="button button--big">оплатить</button>
+                </div>
+              </div>
+
               @@include('_include/contacts_on_page.html')
            </div>
 
@@ -46,5 +56,6 @@
 
     @@include('blocks/page-footer/page-footer.html')
     @@include('_include/page_bottom.html')
+    @@include('_include/popups.html')
 </body>
 </html>

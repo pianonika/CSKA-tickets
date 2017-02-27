@@ -1,4 +1,43 @@
 .arena {
+
   &__wrapper {
+    text-align: center;
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 365px;
+    width: 12%;
+    padding: 0px 3% 65px 2%;
+  }
+
+  &__legend {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &--center {
+      justify-content: center;
+    }
+
+    &-item {
+      text-transform: none;
+      color: @fontColor2;
+      font: normal 14px/18px @fontReg;
+      text-align: left;
+    }
+
+    &-color {
+      display: inline-block;
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      left: -2px;
+      margin-right: 7px;
+      top: 3px;
+    }
   }
 }

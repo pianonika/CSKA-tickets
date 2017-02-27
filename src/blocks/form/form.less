@@ -2,11 +2,16 @@
 
 .form {
   margin: 3px 0 0 0;
-  padding-bottom: 39px;
+  padding-bottom: 20px;
 
   &__field {
     margin-bottom: 17px;
     display: flex;
+
+    &&--double {
+      margin-bottom: 0;
+      flex-grow: 1;
+    }
 
     &--checkbox {
       display: inline-block;
@@ -31,5 +36,15 @@
       align-items: center;
       justify-content: space-between;
     }
+
+    &--double {
+      display: flex;
+      align-items: center;
+    }
   }
+}
+
+
+.login {
+  margin: 40px 0 10px;
 }

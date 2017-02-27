@@ -6,23 +6,32 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin: 0 auto;
   position: relative;
+  padding-bottom: 45px;
 
   &__body {
+    &--remember-password {
+      display: none;
+    }
+  }
+
+  &__content {
     padding: 17px 67px 0 67px;
   }
 
   &__title {
-    font: normal 60px/70px @fontBrand;
+    font: normal 48px/48px @fontBrand;
     text-transform: uppercase;
     color: @fontColor1;
     text-align: center;
   }
+
 
   &__footer-links {
     background-color: fade(@borderColor7,10%);
     padding: 0 67px;
     display: flex;
     flex-wrap: wrap;
+    margin: 20px 0 -45px;
   }
 
   &__footer-link {
@@ -43,7 +52,6 @@
       text-decoration: underline;
     }
   }
-
 }
 
 
