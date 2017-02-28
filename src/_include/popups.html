@@ -32,11 +32,13 @@
   <div class="popup login-form">
      <div class="popup__body popup__body--login">
        <div class="popup__content">
+
          <h1 class="popup__title">авторизация</h1>
-         <form action="/" class="auth form--popup form" >
+
+         <form action="/" class="form--popup form" id="auth">
            <div class="form__row">
                <div class="form__field">
-                 <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
+                 <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="email" placeholder="Ваш e-mail">
                </div>
              </div>
              <div class="form__row">
@@ -52,6 +54,7 @@
                <button type="submit" class="button">Войти на сайт</button>
              </div>
          </form>
+
        </div>
        <div class="popup__footer-links">
          <a href="javascript:void(0);" class="popup__footer-link remember-password">Забыли пароль?</a>

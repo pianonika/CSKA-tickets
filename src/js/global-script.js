@@ -1,12 +1,5 @@
 $(function () {
-
         $('audio,video:not(.video-bg__video), iframe.page-video').mediaelementplayer();
-
-
-        $(".remember-password").on('click', function () {
-          $('.popup__body--login').hide();
-          $('.popup__body--remember-password').show();
-        })
 });
 
 /*

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('_include/page_head.html')
+</head>
+<body class="page">
+  	@@include('blocks/sprite-svg--localstorage/img/sprite-svg--ls.svg')
+
+    @@include('blocks/page-header/page-header.html')
+
+
+    <div class="page__content container-fluid wrapper">
+         <div class="page__header page__wrapper">
+           <div class="return__wrapper  col-xs-2">
+             <a class="return"><span class="return__ico"><img src="/img/return-arrow.png" alt="return-arrow.png"></span> <span class="return__text">к списку игр</span></a>
+           </div>
+           <div class="page__title col-xs-10">
+             <h1>Регистрация</h1>
+           </div>
+         </div>
+         <div class="page__wrapper">
+            <div class="page__title col-xs-8 col-xs-offset-2">
+             <form action="/" class="form" >
+               <div class="form__row">
+                   <div class="form__field">
+                     <div class="col-xs-6">
+                       <label for="name">Запомните меня</label>
+                     </div>
+                     <div class="col-xs-6">
+                       <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
+                     </div>
+                   </div>
+               </div>
+               <div class="form__row">
+                 <div class="form__field">
+                     <div class="col-xs-6">
+                       <label for="name">Запомните меня</label>
+                     </div>
+                     <div class="col-xs-6">
+                       <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
+                     </div>
+                 </div>
+               </div>
+               <div class="form__row form__row--v-centred">
+                 <div class="form__field--checkbox">
+                   <input type="checkbox" value="remember" id="remember" class="checkbox__input checkbox">
+                   <label for="remember" class="checkbox__label" checked="">Запомните меня</label>
+                 </div>
+                 <button type="submit" class="button">Войти на сайт</button>
+               </div>
+             </form>
+              @@include('_include/contacts_on_page.html')
+           </div>
+
+         </div>
+    </div>
+
+
+    @@include('blocks/page-footer/page-footer.html')
+    @@include('_include/page_bottom.html')
+</body>
+</html>
