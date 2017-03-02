@@ -398,6 +398,11 @@ function getComponentsFiles() {
   }
 
   // Если хочется иметь в конкатенируемом JS ещё какие-то файлы, пишите это здесь
+  if(fileExistAndHasContent(dirs.source + '/js/jquery.formstyler.js')) {
+    сomponentsFilesList.js.unshift(dirs.source + '/js/jquery.formstyler.js'); // добавляем в конец
+  }
+
+  // Если хочется иметь в конкатенируемом JS ещё какие-то файлы, пишите это здесь
   if(fileExistAndHasContent(dirs.source + '/js/jquery.mask.js')) {
     сomponentsFilesList.js.unshift(dirs.source + '/js/jquery.mask.js'); // добавляем в конец
   }

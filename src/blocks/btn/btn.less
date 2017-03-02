@@ -1,0 +1,205 @@
+@import '../../less/variables.less';
+
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 24px;
+	color: @brandColorBlue;
+	font-family: @fontBrand;
+	border:1px solid @borderColor;
+	padding: 7px 15px 9px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	transition: 0.3s all;
+
+	&__big{
+		font-size: 28px;
+	    line-height: 28px;
+	    padding: 10px 25px 11px;
+	}
+	&:hover{
+		color: @fontColor3;
+		background: @brandColorRed;
+		border-color: @brandColorRed;
+
+		.btn__icon{
+		    fill: @iconColor5;
+
+		    &-cont{
+		    	border-right: 1px solid @brandColorRed;
+		    	background: @brandColorRed;
+		    }
+		}
+	}
+
+	.icon-arr{
+		border: 7px solid transparent;
+	    border-left: 7px solid @iconColor13;
+	    display: inline-block;
+	    width: 0;
+	    height: 0;
+	    vertical-align: baseline;
+	    margin-left: 4px;
+		margin-right: -7px;
+	}
+	.icon-plus{
+		width: 16px;
+		height: 16px;
+		position: relative;
+
+		&:before, &:after{
+			width: 100%;
+			height: 2px;
+			background: @iconColor5;
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top:0;
+			bottom: 0;
+			margin: auto;
+		}
+		&:before{
+			transform: rotate(90deg);
+		}
+	}
+
+	&__red{
+		border:1px solid @brandColorRed;
+		background: @brandColorRed;
+		color: @fontColor3;
+
+		&:hover{
+			border:1px solid @brandColorBlue;
+			background: @brandColorBlue;
+			color: @fontColor3;
+
+			.icon-arr{
+		    	border-left: 7px solid @iconColor5;
+		    }
+		}
+
+		.icon-arr{
+	    	border-left: 7px solid @iconColor5;
+	    }
+	}
+	&__white{
+		color: @fontColor3;
+		border:1px solid rgba(red(@borderColor9), green(@borderColor9), blue(@borderColor9), 0.2);
+
+		.btn__icon{
+			fill: @iconColor5;
+
+			&-cont{
+				border-right: 1px solid rgba(red(@borderColor9), green(@borderColor9), blue(@borderColor9), 0.2);
+			}
+		}
+
+	}
+
+	&__blue{
+		color: @fontColor3;
+		border-color: @brandColorBlue;
+		background: @brandColorBlue;
+
+		&:hover{
+			border-color: @brandColorRed;
+			background: @brandColorRed;
+		}
+	}
+	&__blue2{
+		color: @fontColor3;
+		border-color: @brandColorBlue;
+		background: @brandColorBlue;
+
+		&:hover{
+			border-color: @brandColorRed;
+			background: @brandColorRed;
+		}
+	}
+	&__small{
+		padding: 1px 10px 3px;
+		font-size: 14px;
+	}
+	&__icon{
+		fill: @iconColor3;
+		transition: 0.3s all;
+		display: block;
+
+		&-cont{
+			display: inline-block;
+			border-right: 1px solid @borderColor;
+			padding: 12px 10px;
+			margin: -7px 13px -14px -15px;
+			transition: 0.3s all;
+			vertical-align: top;
+		}
+	}
+}
+
+.blue, .black, .bg{
+	.btn{
+		color: @fontColor3;
+		border:1px solid @borderColor9;
+
+		&:hover{
+			border-color: @brandColorRed;
+		}
+
+		.icon-arr{
+			border-left: 7px solid @iconColor5;
+	    }
+
+	    &__white{
+			color: @fontColor3;
+			border:1px solid rgba(red(@borderColor9), green(@borderColor9), blue(@borderColor9), 0.2);
+
+			.btn__icon{
+				fill: @iconColor5;
+
+				&-cont{
+					border-right: 1px solid rgba(red(@borderColor9), green(@borderColor9), blue(@borderColor9), 0.2);
+				}
+			}
+
+		}
+		&__blue{
+			border-color: @brandColorBlue;
+
+			&:hover{
+				border-color: @brandColorRed;
+				background: @brandColorRed;
+			}
+		}
+			&__red{
+		border:1px solid @brandColorRed;
+		background: @brandColorRed;
+		color: @fontColor3;
+
+		&:hover{
+			border:1px solid @bgColor;
+			background: @bgColor;
+			color: @brandColorRed;
+
+			.icon-arr{
+		    	border-left: 7px solid @brandColorRed;
+		    }
+		}
+
+		.icon-arr{
+	    	border-left: 7px solid @iconColor5;
+	    }
+	}
+
+		&__blue2{
+			border-color: @brandColorBlue;
+			&:hover{
+				border-color: @brandColorRed;
+				background: @brandColorRed;
+			}
+		}
+	}
+}

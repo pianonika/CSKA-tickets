@@ -2,15 +2,15 @@
   <div class="popup login-form1">
      <div class="popup__body">
        <h1 class="popup__title">авторизация</h1>
-       <form action="/" class="auth form--popup form" >
+       <form action="/" class="auth form--popup form js_form-validate">
          <div class="form__row">
              <div class="form__field">
-               <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
+               <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
              </div>
            </div>
            <div class="form__row">
              <div class="form__field">
-               <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Пароль">
+               <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Пароль">
              </div>
            </div>
            <div class="form__row form__row--v-centred">
@@ -35,15 +35,15 @@
 
          <h1 class="popup__title">авторизация</h1>
 
-         <form action="/" class="form--popup form" id="auth">
+         <form action="/" class="form--popup form js_form-validate" id="auth">
            <div class="form__row">
                <div class="form__field">
-                 <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="email" placeholder="Ваш e-mail">
+                 <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="email" placeholder="Ваш e-mail">
                </div>
              </div>
              <div class="form__row">
                <div class="form__field">
-                 <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Пароль">
+                 <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Пароль">
                </div>
              </div>
              <div class="form__row form__row--v-centred">
@@ -69,11 +69,18 @@
         <form action="/" class="login form--popup form" >
            <div class="form__row form__row--double">
             <div class="form__field form__field--double">
-              <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш E-mail">
+              <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш E-mail">
             </div>
             <button type="submit" class="button">Отправить</button>
           </div>
         </form>
+      </div>
+    </div>
+
+    <div class="popup__body popup__body--remember-thanks">
+      <div class="popup__content">
+        <h1 class="popup__title">Восстановление пароля</h1>
+        <p>На Ваш адрес выслано сообщение<br>для смены пароля!</p>
       </div>
     </div>
   </div>

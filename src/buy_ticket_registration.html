@@ -14,45 +14,273 @@
            <div class="return__wrapper  col-xs-2">
              <a class="return"><span class="return__ico"><img src="/img/return-arrow.png" alt="return-arrow.png"></span> <span class="return__text">к списку игр</span></a>
            </div>
-           <div class="page__title col-xs-10">
+           <div class="page__title col-xs-8">
              <h1>Регистрация</h1>
            </div>
          </div>
          <div class="page__wrapper">
-            <div class="page__title col-xs-8 col-xs-offset-2">
-             <form action="/" class="form" >
-               <div class="form__row">
-                   <div class="form__field">
-                     <div class="col-xs-6">
-                       <label for="name">Запомните меня</label>
-                     </div>
-                     <div class="col-xs-6">
-                       <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
-                     </div>
-                   </div>
-               </div>
-               <div class="form__row">
-                 <div class="form__field">
-                     <div class="col-xs-6">
-                       <label for="name">Запомните меня</label>
-                     </div>
-                     <div class="col-xs-6">
-                       <input class="form__inp-text pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
-                     </div>
-                 </div>
-               </div>
-               <div class="form__row form__row--v-centred">
-                 <div class="form__field--checkbox">
-                   <input type="checkbox" value="remember" id="remember" class="checkbox__input checkbox">
-                   <label for="remember" class="checkbox__label" checked="">Запомните меня</label>
-                 </div>
-                 <button type="submit" class="button">Войти на сайт</button>
-               </div>
-             </form>
-              @@include('_include/contacts_on_page.html')
-           </div>
+  <div class="page__content-area col-xs-12">
+    <form class="form js_form-validate">
 
-         </div>
+
+
+
+      <div class="row form__row">
+        <div class="col-xs-8 col-xs-offset-2">
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Фамилия</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input type="text" class="form__input" placeholder="Фамилия" name="field1" required data-msg-required="Поле не заполнено" />
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Имя</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input type="text" class="form__input" placeholder="Имя" name="field2" required data-msg-required="Поле не заполнено" />
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Отчество</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input type="text" class="form__input" placeholder="Отчество" name="field3" required data-msg-required="Поле не заполнено" />
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Электронная почта</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input type="email" class="form__input" placeholder="Электронная почта" name="field7" required data-msg-required="Поле не заполнено" data-msg-email="Поле заполнено некорректно"/>
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Телефон</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input type="text" class="form__input js_mask-phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="password" required data-msg-required="Поле не заполнено" data-msg-minlength="Поле заполнено некорректно"  data-rule-minlength="18" />
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Пароль</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input id="password" type="password" class="form__input" placeholder="Пароль" name="field6" required data-msg-required="Поле не заполнено" data-rule-minlength="6" data-msg-minlength="Не менее 6 символов"/>
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Подтвердите пароль</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input id="password_confirm" type="password" class="form__input" placeholder="Подтвердите пароль" name="field6" required data-msg-required="Поле не заполнено" data-rule-equalTo="#password" data-msg-equalTo="Пароли не совпадают"/>
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Дата рождения</div>
+        </div>
+        <div class="col-xs-5">
+
+
+
+
+          <select class="form__select">
+                       <option value="">1</option>
+                       <option value="">2</option>
+                       <option value="">3</option>
+                       <option value="">4</option>
+                       <option value="">5</option>
+                       <option value="">6</option>
+                       <option value="">7</option>
+                       <option value="">8</option>
+                       <option value="">9</option>
+                       <option value="">10</option>
+                       <option value="">11</option>
+                       <option value="">12</option>
+                       <option value="">13</option>
+                       <option value="">14</option>
+                       <option value="">15</option>
+                       <option value="">16</option>
+                       <option value="">17</option>
+                       <option value="">18</option>
+                       <option value="">19</option>
+                       <option value="">20</option>
+                       <option value="">21</option>
+                       <option value="">22</option>
+                       <option value="">23</option>
+                       <option value="">24</option>
+                       <option value="">25</option>
+                       <option value="">26</option>
+                       <option value="">27</option>
+                       <option value="">28</option>
+                       <option value="">29</option>
+                       <option value="">30</option>
+                       <option value="">31</option>
+                     </select>
+
+          <select class="form__select">
+                       <option value="">январь</option>
+                       <option value="">февраль</option>
+                       <option value="">март</option>
+                       <option value="">апрель</option>
+                       <option value="">май</option>
+                       <option value="">июнь</option>
+                       <option value="">июль</option>
+                       <option value="">август</option>
+                       <option value="">сентябрь</option>
+                       <option value="">октябрь</option>
+                       <option value="">ноябрь</option>
+                       <option value="">декабрь</option>
+                     </select>
+
+          <select class="form__select">
+                       <option value="">2000</option>
+                       <option value="">2001</option>
+                       <option value="">2002</option>
+                       <option value="">2003</option>
+                       <option value="">2004</option>
+                       <option value="">2005</option>
+                       <option value="">2006</option>
+                       <option value="">2007</option>
+                       <option value="">2008</option>
+                       <option value="">2009</option>
+                       <option value="">2010</option>
+                       <option value="">2011</option>
+                       <option value="">2012</option>
+                       <option value="">2013</option>
+                       <option value="">2014</option>
+                       <option value="">2015</option>
+                       <option value="">2016</option>
+                     </select>
+          <div class="form__input-star-outer">
+            <div class="form__input-star">*</div>
+          </div>
+
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Город/район проживания</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input type="text" class="form__input" placeholder="Город/район проживания" name="field5" required data-msg-required="Поле не заполнено" />
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">Домашний адрес</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <input type="text" class="form__input" placeholder="лица, номер дома, квартиры" name="field8" required data-msg-required="Поле не заполнено" />
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="row form__row">
+        <div class="col-xs-3 col-xs-offset-2">
+          <div class="form__row-name">КАПЧА</div>
+        </div>
+        <div class="col-xs-5">
+          <div class="form__input-outer">
+            <img src="/img/captcha-text.jpg" alt="captcha-text.jpg">
+            <div class="form__input-star">*</div>
+          </div>
+          <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="row form__row">
+       <div class="col-xs-6 col-xs-offset-3 text-center">
+
+         <label class="form__label">
+             <input type="checkbox" class="form__checkbox form__checkbox__rel" required name="field20" data-msg-required="Необходимо подтвердить согласие"/><br>
+             <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+             Настоящим подтверждаю свое согласие с условиями <br>
+            “Публичной оферты” со ссылкой на соглашение<span class="form__input-star form__input-star__static">*</span>
+           </label>
+
+       </div>
+       <div class="clearfix"></div>
+      </div>
+
+      <div class="row form__row">
+       <div class="col-xs-8 col-xs-offset-2 text-center">
+         <a href="javascipt:void(0);" class="btn btn__red btn__big js_submit">Отправить</a>
+         <div class="clearfix"></div>
+         <div class="form__small">Поля помеченные звездочкой <br>обязательны для заполнения</div>
+
+       </div>
+       <div class="clearfix"></div>
+      </div>
+
+
+
+
+
+
+    </form>
+    <div class="col-xs-12  col-xs-offset-2">
+      @@include('_include/contacts_on_page.html')</div>
+  </div>
+</div>
+
     </div>
 
 
