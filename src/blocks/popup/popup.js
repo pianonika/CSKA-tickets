@@ -1,5 +1,5 @@
 $(function () {
-    $('.registration').magnificPopup({
+    $('.login').magnificPopup({
       items: {
 				type: 'inline',
 				src: '.login-form'

@@ -8,7 +8,9 @@
 
     @@include('blocks/page-header/page-header.html')
 
-
+<script>
+  
+</script>
     <div class="page__content container-fluid wrapper">
          <div class="page__header page__wrapper">
            <div class="return__wrapper  col-xs-2">
@@ -29,30 +31,23 @@
               </div>
            </div>
            <div class="page__content-area col-xs-10">
-
               <div class="arena__wrapper">
                 <div class="arena__widget">
-                  <img src="/img/choose_place.png" alt="arena.png">
+                  <img src="/img/arena.png" alt="arena.png" style="margin-bottom: 110px;">
                 </div>
-                <div class="arena__info arena__info--center ">
+                <div class="arena__info ">
                   <a href="/inner.html" class="icon-text icon-text--info">Как купить?</a>
-                  <div class="arena__legend  arena__legend--center">
-                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #a38be0"></span> Есть места</div>
+                  <div class="arena__legend arena__legend--center">
+                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #238ed4"></span> Есть места</div>
                     <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #bdc9d7"></span> Места нет</div>
-                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #fbee33"></span> Выбранные</div>
                   </div>
                 </div>
-  
                 <div class="row form__row">
                   <div class="col-xs-8 col-xs-offset-2 text-center comment">
-                    <span class="">Продажа билетов <b>ограничена 3 билетами</b>. Оплата картами возможна 1 раз в сутки. Выбранные вами места должны быть оплаены в течение <b>15 минут</b>.</span> <br> Программа к матчу доступна здесь:
-                    <a href="//www.cska-hockey.ru/journals" target="_blank">www.cska-hockey.ru/journals</a>
+                    <span class="text-important">Продажа билетов <b>ограничена 3 билетами</b>. Оплата картами возможна 1 раз в сутки. Выбранные вами места должны быть оплаены в течение <b>15 минут</b>.</span> <br> Программа к матчу доступна здесь: <a href="//www.cska-hockey.ru/journals" target="_blank">www.cska-hockey.ru/journals</a>
                   </div>
                 </div>
-
-                <div class="button-container">
-                  <button type="submit" class="button button--big">оплатить</button>
-                </div>
+              </div>
               @@include('_include/contacts_on_page.html')
            </div>
 

@@ -24,35 +24,28 @@
               <div class="side-menu">
                 <div class="side-menu__list">
                   <a class="side-menu__item side-menu__item--bright login">вход</a>
-                  <a class="side-menu__item registration">регистрация</a>
+                  <a class="side-menu__item registration" href="buy_ticket_registration.html">регистрация</a>
                 </div>
               </div>
            </div>
            <div class="page__content-area col-xs-10">
-
               <div class="arena__wrapper">
                 <div class="arena__widget">
-                  <img src="/img/choose_place.png" alt="arena.png">
+                  <img src="/img/arena.png" alt="arena.png" style="margin-bottom: 110px;">
                 </div>
-                <div class="arena__info arena__info--center ">
+                <div class="arena__info ">
                   <a href="/inner.html" class="icon-text icon-text--info">Как купить?</a>
-                  <div class="arena__legend  arena__legend--center">
-                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #a38be0"></span> Есть места</div>
+                  <div class="arena__legend arena__legend--center">
+                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #238ed4"></span> Есть места</div>
                     <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #bdc9d7"></span> Места нет</div>
-                    <div class="arena__legend-item"><span class="arena__legend-color" style="background-color: #fbee33"></span> Выбранные</div>
                   </div>
                 </div>
-  
                 <div class="row form__row">
                   <div class="col-xs-8 col-xs-offset-2 text-center comment">
-                    <span class="">Продажа билетов <b>ограничена 3 билетами</b>. Оплата картами возможна 1 раз в сутки. Выбранные вами места должны быть оплаены в течение <b>15 минут</b>.</span> <br> Программа к матчу доступна здесь:
-                    <a href="//www.cska-hockey.ru/journals" target="_blank">www.cska-hockey.ru/journals</a>
+                    <span class="text-important">Продажа билетов <b>ограничена 3 билетами</b>. Оплата картами возможна 1 раз в сутки. Выбранные вами места должны быть оплаены в течение <b>15 минут</b>.</span> <br> Программа к матчу доступна здесь: <a href="//www.cska-hockey.ru/journals" target="_blank">www.cska-hockey.ru/journals</a>
                   </div>
                 </div>
-
-                <div class="button-container">
-                  <button type="submit" class="button button--big">оплатить</button>
-                </div>
+              </div>
               @@include('_include/contacts_on_page.html')
            </div>
 
@@ -63,5 +56,23 @@
     @@include('blocks/page-footer/page-footer.html')
     @@include('_include/page_bottom.html')
     @@include('_include/popups.html')
+
+    <script>
+    $(function () {
+      $.magnificPopup.open({
+        items: {
+          type: 'inline',
+          src: '.dont_log-in'
+        },
+        callbacks: {
+          close: function() {
+            $('.popup__body--login').show();
+            $('.popup__body--remember-password').hide();
+          }
+        }
+      }, 0);
+
+    })
+    </script>
 </body>
 </html>

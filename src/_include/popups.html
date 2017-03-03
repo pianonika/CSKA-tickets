@@ -1,33 +1,4 @@
 <div class="popups">
-  <div class="popup login-form1">
-     <div class="popup__body">
-       <h1 class="popup__title">авторизация</h1>
-       <form action="/" class="auth form--popup form js_form-validate">
-         <div class="form__row">
-             <div class="form__field">
-               <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш e-mail">
-             </div>
-           </div>
-           <div class="form__row">
-             <div class="form__field">
-               <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Пароль">
-             </div>
-           </div>
-           <div class="form__row form__row--v-centred">
-             <div class="form__field--checkbox">
-               <input type="checkbox" value="remember" id="remember" class="checkbox__input checkbox">
-               <label for="remember" class="checkbox__label" checked="">Запомните меня</label>
-             </div>
-             <button type="submit" class="button">Войти на сайт</button>
-           </div>
-       </form>
-     </div>
-     <div class="popup__footer-links group">
-       <a href="" class="popup__footer-link remember-password">Забыли пароль?</a>
-       <a href="" class="popup__footer-link">Зарегистрироваться</a>
-     </div>
-     <div class="popup__close"></div>
-  </div>
 
   <div class="popup login-form">
      <div class="popup__body popup__body--login">
@@ -77,10 +48,20 @@
       </div>
     </div>
 
+
     <div class="popup__body popup__body--remember-thanks">
       <div class="popup__content">
         <h1 class="popup__title">Восстановление пароля</h1>
         <p>На Ваш адрес выслано сообщение<br>для смены пароля!</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="popup dont_log-in">
+    <div class="popup__body">
+      <div class="popup__content">
+        <p>Для того, чтобы забронировать место <a href="javascript:void(0);" class="login">авторизуйтесь</a>, пожалуйста.</p>
       </div>
     </div>
   </div>
