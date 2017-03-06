@@ -20,11 +20,7 @@
          </div>
          <div class="page__wrapper">
   <div class="page__content-area col-xs-12">
-    <form class="form js_form-validate">
-
-
-
-
+    <form class="form js_form-validate" id="#registration">
       <div class="row form__row">
         <div class="col-xs-8 col-xs-offset-2">
         </div>
@@ -62,8 +58,7 @@
         </div>
         <div class="col-xs-5">
           <div class="form__input-outer">
-            <input type="text" class="form__input" placeholder="Отчество" name="field3" required data-msg-required="Поле не заполнено" />
-            <div class="form__input-star">*</div>
+            <input type="text" class="form__input" placeholder="Отчество" name="field3"/>
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
         </div>
@@ -101,7 +96,7 @@
         </div>
         <div class="col-xs-5">
           <div class="form__input-outer">
-            <input id="password" type="password" class="form__input" placeholder="Пароль" name="field6" required data-msg-required="Поле не заполнено" data-rule-minlength="6" data-msg-minlength="Не менее 6 символов"/>
+            <input id="password" type="password" class="form__input" placeholder="Пароль" name="field6" required data-msg-required="Поле не заполнено" data-rule-minlength="6" data-msg-minlength="Пароль должен содержать не менее 6 символов"/>
             <div class="form__input-star">*</div>
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
@@ -114,7 +109,7 @@
         </div>
         <div class="col-xs-5">
           <div class="form__input-outer">
-            <input id="password_confirm" type="password" class="form__input" placeholder="Подтвердите пароль" name="field6" required data-msg-required="Поле не заполнено" data-rule-equalTo="#password" data-msg-equalTo="Пароли не совпадают"/>
+            <input id="password_confirm" type="password" class="form__input" placeholder="Подтвердите пароль" name="field6" required data-msg-required="Поле не заполнено" data-rule-equalTo="#password" data-msg-equalTo="Убедитесь, что Ваши пароли совпадают"/>
             <div class="form__input-star">*</div>
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
@@ -127,80 +122,29 @@
         </div>
         <div class="col-xs-5">
 
-
-
-
-          <select class="form__select">
-                       <option value="">1</option>
-                       <option value="">2</option>
-                       <option value="">3</option>
-                       <option value="">4</option>
-                       <option value="">5</option>
-                       <option value="">6</option>
-                       <option value="">7</option>
-                       <option value="">8</option>
-                       <option value="">9</option>
-                       <option value="">10</option>
-                       <option value="">11</option>
-                       <option value="">12</option>
-                       <option value="">13</option>
-                       <option value="">14</option>
-                       <option value="">15</option>
-                       <option value="">16</option>
-                       <option value="">17</option>
-                       <option value="">18</option>
-                       <option value="">19</option>
-                       <option value="">20</option>
-                       <option value="">21</option>
-                       <option value="">22</option>
-                       <option value="">23</option>
-                       <option value="">24</option>
-                       <option value="">25</option>
-                       <option value="">26</option>
-                       <option value="">27</option>
-                       <option value="">28</option>
-                       <option value="">29</option>
-                       <option value="">30</option>
-                       <option value="">31</option>
-                     </select>
-
-          <select class="form__select">
-                       <option value="">январь</option>
-                       <option value="">февраль</option>
-                       <option value="">март</option>
-                       <option value="">апрель</option>
-                       <option value="">май</option>
-                       <option value="">июнь</option>
-                       <option value="">июль</option>
-                       <option value="">август</option>
-                       <option value="">сентябрь</option>
-                       <option value="">октябрь</option>
-                       <option value="">ноябрь</option>
-                       <option value="">декабрь</option>
-                     </select>
-
-          <select class="form__select">
-                       <option value="">2000</option>
-                       <option value="">2001</option>
-                       <option value="">2002</option>
-                       <option value="">2003</option>
-                       <option value="">2004</option>
-                       <option value="">2005</option>
-                       <option value="">2006</option>
-                       <option value="">2007</option>
-                       <option value="">2008</option>
-                       <option value="">2009</option>
-                       <option value="">2010</option>
-                       <option value="">2011</option>
-                       <option value="">2012</option>
-                       <option value="">2013</option>
-                       <option value="">2014</option>
-                       <option value="">2015</option>
-                       <option value="">2016</option>
-                     </select>
-          <div class="form__input-star-outer">
-            <div class="form__input-star">*</div>
+          <div class="birthday-day">
+              <input type="text" class="form__input"  name="field6" required data-msg-required="Поле не заполнено" placeholder="День"  maxlength="2"/>
           </div>
+
+          <select class="form__select">
+             <option value="">январь</option>
+             <option value="">февраль</option>
+             <option value="">март</option>
+             <option value="">апрель</option>
+             <option value="">май</option>
+             <option value="">июнь</option>
+             <option value="">июль</option>
+             <option value="">август</option>
+             <option value="">сентябрь</option>
+             <option value="">октябрь</option>
+             <option value="">ноябрь</option>
+             <option value="">декабрь</option>
+           </select>
+
+
+           <div class="birthday-mounth">
+             <input  type="text" class="form__input"name="field6" required data-msg-required="Поле не заполнено" placeholder="Месяц" maxlength="4"/>
+           </div>
 
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
         </div>
@@ -208,12 +152,11 @@
       </div>
       <div class="row form__row">
         <div class="col-xs-3 col-xs-offset-2">
-          <div class="form__row-name">Город/район проживания</div>
+          <div class="form__row-name">Город</div>
         </div>
         <div class="col-xs-5">
           <div class="form__input-outer">
-            <input type="text" class="form__input" placeholder="Город/район проживания" name="field5" required data-msg-required="Поле не заполнено" />
-            <div class="form__input-star">*</div>
+            <input type="text" class="form__input" placeholder="Город" name="field5" />
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
         </div>
@@ -225,8 +168,7 @@
         </div>
         <div class="col-xs-5">
           <div class="form__input-outer">
-            <input type="text" class="form__input" placeholder="лица, номер дома, квартиры" name="field8" required data-msg-required="Поле не заполнено" />
-            <div class="form__input-star">*</div>
+            <input type="text" class="form__input" placeholder="улица, номер дома, квартиры" name="field8"/>
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
         </div>
@@ -239,6 +181,9 @@
         <div class="col-xs-5">
           <div class="form__input-outer">
             <img src="/img/captcha-text.jpg" alt="captcha-text.jpg">
+            <div class="form__input-outer captcha">
+              <input type="text" class="form__input " required name="field9" data-msg-required="Поле не заполнено" />
+            </div>
             <div class="form__input-star">*</div>
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
@@ -250,10 +195,10 @@
        <div class="col-xs-6 col-xs-offset-3 text-center">
 
          <label class="form__label">
-             <input type="checkbox" class="form__checkbox form__checkbox__rel" required name="field20" data-msg-required="Необходимо подтвердить согласие"/><br>
+             <input type="checkbox"  class="form__checkbox form__checkbox__rel" required name="field20" data-msg-required="Необходимо подтвердить согласие" checked/><br>
              <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
              Настоящим подтверждаю свое согласие с условиями <br>
-            “Публичной оферты” со ссылкой на соглашение<span class="form__input-star form__input-star__static">*</span>
+            <a href="#">«Публичной оферты»</a><span class="form__input-star form__input-star__static">*</span>
            </label>
 
        </div>
@@ -262,29 +207,35 @@
 
       <div class="row form__row">
        <div class="col-xs-8 col-xs-offset-2 text-center">
-         <a href="javascipt:void(0);" class="btn btn__red btn__big js_submit">Отправить</a>
+         <button type="submit" class="btn btn__red btn__big js_submit">Отправить</button>
          <div class="clearfix"></div>
-         <div class="form__small">Поля помеченные звездочкой <br>обязательны для заполнения</div>
+         <div class="form__small">Поля помеченные <span class="form__input-star form__input-star__static">*</span> <br>обязательны для заполнения</div>
 
        </div>
        <div class="clearfix"></div>
       </div>
 
-
-
-
-
-
     </form>
-    <div class="col-xs-12  col-xs-offset-2">
-      @@include('_include/contacts_on_page.html')</div>
-  </div>
 </div>
+<div class="col-xs-12 col-xs-offset-2">@@include('_include/contacts_on_page.html')</div>
 
     </div>
 
 
     @@include('blocks/page-footer/page-footer.html')
     @@include('_include/page_bottom.html')
+    @@include('_include/popups.html')
+
+
+<script type="text/javascript">
+  $(function () {
+    $.magnificPopup.open({
+      items: {
+        type: 'inline',
+        src: '.registration'
+      }
+    });
+  });
+</script>
 </body>
 </html>

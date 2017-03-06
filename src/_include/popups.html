@@ -9,7 +9,7 @@
          <form action="/" class="form--popup form js_form-validate" id="auth">
            <div class="form__row">
                <div class="form__field">
-                 <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="email" placeholder="Ваш e-mail">
+                 <input class="form__input pic-error required" type="email" name="email" placeholder="Ваш e-mail" required data-msg-required="Поле не заполнено" data-msg-email="Поле заполнено некорректно">
                </div>
              </div>
              <div class="form__row">
@@ -19,7 +19,7 @@
              </div>
              <div class="form__row form__row--v-centred">
                <div class="form__field--checkbox">
-                 <input type="checkbox" value="remember" id="remember" class="checkbox__input checkbox">
+                 <input type="checkbox" class="form__checkbox form__checkbox__rel" name="field20" />
                  <label for="remember" class="checkbox__label" checked="">Запомните меня</label>
                </div>
                <button type="submit" class="button">Войти на сайт</button>
@@ -63,6 +63,14 @@
       <div class="popup__content">
         <p>Для того, чтобы забронировать место <a href="javascript:void(0);" class="login">авторизуйтесь</a>, пожалуйста.</p>
       </div>
+    </div>
+  </div>
+
+
+  <div class="popup registration">
+    <div class="popup__content">
+      <h1 class="popup__title">Спасибо!</h1>
+      <p>На&nbsp;Ваш адрес выслано сообщение для подтверждения регистрации.</p>
     </div>
   </div>
 </div>

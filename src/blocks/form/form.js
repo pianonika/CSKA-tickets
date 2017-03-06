@@ -1,5 +1,5 @@
 $(function () {
-  
+
   $('select, input').styler();
 
   $(".remember-password").on('click', function () {
@@ -17,15 +17,19 @@ $(function () {
 		errorPlacement: function(error, element) {
 			$(element).parents('.form__row').find('.form__error-text').text('');
 			error.appendTo( $(element).parents('.form__row').find('.form__error-text') );
-			$(element).parents('.form__row').find('.form__error').addClass('visible');
+      console.log(element);
 
 			setTimeout(function(){
 				$('form select, form input').trigger('refresh');
 			}, 10);
 		},
+    unhighlight: function(element, errorClass, validClass) {
+        $(element).removeClass('error').parents('.form__row').find('.form__error').removeClass('visible');
+    },
+    highlight: function(element, errorClass, validClass) {
+      $(element).addClass('error').parents('.form__row').find('.form__error').addClass('visible');
+    },
 		success: function(error, element) {
-			$(error).parents('.form__error').removeClass('visible');
-
 			if( $(element).is('[type="radio"]') || $(element).is('[type="checkbox"]') ){
 				setTimeout(function(){
 					$('form select, form input').trigger('refresh');
@@ -49,4 +53,6 @@ $(function () {
 		}
 
 	});
-})
+
+
+});
