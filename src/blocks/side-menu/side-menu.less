@@ -10,7 +10,7 @@
     padding-bottom: 11px;
     margin-bottom: 25px;
     margin-top: 18px;
-    font-family: inherit;;
+    font-family: inherit;
 
     &::after {
       content: '';
@@ -41,6 +41,26 @@
 
     &--bright {
       color: @brandColorRed;
+    }
+  }
+
+
+  &__footer {
+    color: @brandColorRed;
+    font-family: inherit;
+    padding-top: 11px;
+    margin-top: 25px;
+    margin-top: 18px;
+    font-family: inherit;
+
+    &::before {
+      content: '';
+      width: 107px;
+      height: 1px;
+      background-color: @gray-light;
+      position: relative;
+      display: block;
+      top: -11px;
     }
   }
 }

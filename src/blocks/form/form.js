@@ -2,10 +2,9 @@ $(function () {
 
   $('select, input').styler();
 
-  $(".remember-password").on('click', function () {
-    $('.popup__body--login').hide();
-    $('.popup__body--remember-password').show();
-    console.log('123');
+  $(".popup__footer-link--toggle").on('click', function () {
+    $('.popup__body--login').toggle();
+    $('.popup__body--remember-password').toggle();
   })
 
   $('.js_submit').click(function(){
@@ -20,7 +19,7 @@ $(function () {
   		$this_form.validate({
     		errorPlacement: function(error, element) {
     			$(element).parents('.form__row').find('.form__error-text').text('');
-    			error.appendTo( $(element).parents('.form__row').find('.form__error-text') );
+    			error.appendTo( $(element).parents('.form__row').find('.form__error-text') ); 
 
     			setTimeout(function(){
     				$('form select, form input').trigger('refresh');
@@ -120,18 +119,18 @@ $('.js_form-validate--with-data').validate({
 
 
 
-    $('input.check-email"]').on('focusout', function() {
-        $.ajax({
-            url: '/api/checkemail?email=' + $(this).val(),
-            dataType: 'json'
-        }).then(function(response) {
-            if (response.emailExists) {
-                console.log('email exists');
-            } else {
-                console.log('email doesnt exist');
-            }
-        });
-    })
+    // $('input.check-email"]').on('focusout', function() {
+    //     $.ajax({
+    //         url: '/api/checkemail?email=' + $(this).val(),
+    //         dataType: 'json'
+    //     }).then(function(response) {
+    //         if (response.emailExists) {
+    //             console.log('email exists');
+    //         } else {
+    //             console.log('email doesnt exist');
+    //         }
+    //     });
+    // })
 
 
 });

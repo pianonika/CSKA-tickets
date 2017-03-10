@@ -20,8 +20,14 @@
          </div>
          <div class="page__wrapper">
            <div class="page__left col-xs-2">
-
+              <div class="side-menu">
+                <div class="side-menu__list">
+                  <a class="side-menu__item side-menu__item--bright login" href="javascript:void(0);">вход</a>
+                  <a class="side-menu__item" href="inner.html">Как купить?</a>
+                </div>
+              </div>
            </div>
+
   <div class="page__content-area col-xs-10">
     <form class="form js_form-validate--with-data" id="registration">
       <div class="row form__row">
@@ -80,19 +86,21 @@
         </div>
         <div class="clearfix"></div>
       </div>
+
       <div class="row form__row">
         <div class="col-xs-3 col-xs-offset-1">
           <div class="form__row-name">Телефон</div>
         </div>
         <div class="col-xs-5">
           <div class="form__input-outer">
-            <input type="text" class="form__input js_mask-phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="password" required data-msg-required="Поле не заполнено" data-msg-minlength="Поле заполнено некорректно"  data-rule-minlength="18" />
+            <input type="text" class="form__input js_mask-phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="phone" required data-msg-required="Поле не заполнено" data-msg-minlength="Поле заполнено некорректно"  data-rule-minlength="18" />
             <div class="form__input-star">*</div>
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
         </div>
         <div class="clearfix"></div>
       </div>
+
       <div class="row form__row">
         <div class="col-xs-3 col-xs-offset-1">
           <div class="form__row-name">Пароль</div>
@@ -106,6 +114,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
+
       <div class="row form__row">
         <div class="col-xs-3 col-xs-offset-1">
           <div class="form__row-name">Подтвердите пароль</div>
@@ -119,6 +128,7 @@
         </div>
         <div class="clearfix"></div>
       </div>
+
       <div class="row form__row">
         <div class="col-xs-3 col-xs-offset-1">
           <div class="form__row-name">Дата рождения</div>
@@ -171,7 +181,7 @@
         </div>
         <div class="col-xs-5">
           <div class="form__input-outer">
-            <input type="text" class="form__input" placeholder="улица, номер дома, квартиры" name="field8"/>
+            <input type="text" class="form__input" placeholder="Улица, номер дома, квартиры" name="field8"/>
           </div>
           <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
         </div>
