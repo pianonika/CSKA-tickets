@@ -1,4 +1,4 @@
-<div class="popups">
+<div class="popups-wrapper">
 
   <div class="popup login-form">
      <div class="popup__body popup__body--login">
@@ -6,23 +6,26 @@
 
          <h1 class="popup__title">авторизация</h1>
 
-         <form action="/" class="form--popup form js_form-validate" id="auth">
+         <form action="/" class="form--popup form  js_form-validate" id="auth">
            <div class="form__row">
-               <div class="form__field">
-                 <input class="form__input pic-error required" type="email" name="email" placeholder="Ваш e-mail" required data-msg-required="Поле не заполнено" data-msg-email="Поле заполнено некорректно">
+               <div class="form__input-outer">
+                 <input type="email"  class="form__input" placeholder="Электронная почта" name="field7" required data-msg-required="Поле не заполнено" data-msg-email="Поле заполнено некорректно" />
                </div>
+               <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
              </div>
              <div class="form__row">
-               <div class="form__field">
-                 <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Пароль">
+               <div class="form__input-outer">
+                 <input class="form__input pic-error required"  type="password"  data-msg-required="Поле не заполнено" name="name" placeholder="Пароль" data-rule-minlength="6" data-msg-minlength="Неверное значение">
                </div>
+               <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
              </div>
              <div class="form__row form__row--v-centred">
                <div class="form__field--checkbox">
                  <input type="checkbox" class="form__checkbox form__checkbox__rel" name="field20" />
                  <label for="remember" class="checkbox__label" checked="">Запомните меня</label>
                </div>
-               <button type="submit" class="button">Войти на сайт</button>
+               <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
+               <button type="submit" class="btn btn__red  btn__popup">Войти на сайт</button>
              </div>
          </form>
 
@@ -37,12 +40,15 @@
     <div class="popup__body popup__body--remember-password">
       <div class="popup__content">
         <h1 class="popup__title">Восстановление пароля</h1>
-        <form action="/" class="login form--popup form" >
-           <div class="form__row form__row--double">
-            <div class="form__field form__field--double">
-              <input class="form__input pic-error required" type="text"  data-msg-required="Поле не заполнено" name="name" placeholder="Ваш E-mail">
-            </div>
-            <button type="submit" class="button">Отправить</button>
+        <form action="/" class="form--popup form js_form-validate" id="remember-password">
+           <div class="form__row">
+             <div class="form__row--double">
+               <div class="form__input-outer">
+                 <input type="email" class="form__input" placeholder="Электронная почта" name="field7" required data-msg-required="Поле не заполнено" data-msg-email="Поле заполнено некорректно"/>
+               </div>
+                           <button type="submit" class="btn btn__red  btn__popup">Отправить</button>
+             </div>
+            <div class="form__error">Ошибка! <span class="form__error-text"></span></div>
           </div>
         </form>
       </div>
@@ -73,4 +79,13 @@
       <p>На&nbsp;Ваш адрес выслано сообщение для подтверждения регистрации.</p>
     </div>
   </div>
+
+
+  <div class="popup change-personal-data">
+    <div class="popup__content">
+      <div class="popup__body">
+        <p>Изменения сохранены</p>
+      </div>
+        </div>
+    </div>
 </div>
